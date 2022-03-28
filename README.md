@@ -1,0 +1,3 @@
+# css-animation-cypress-example
+
+The CSS example comes from the Codepen [CSS Animation: Time of Day](https://codepen.io/oliviale/pen/ELPvLM) by Olivia Ng
