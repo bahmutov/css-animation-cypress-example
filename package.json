@@ -1,0 +1,16 @@
+{
+  "name": "css-animation-cypress-example",
+  "version": "1.0.0",
+  "description": "The CSS example comes from the Codepen [CSS Animation: Time of Day](https://codepen.io/oliviale/pen/ELPvLM) by Olivia Ng",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^9.5.3",
+    "prettier": "^2.6.1"
+  }
+}
