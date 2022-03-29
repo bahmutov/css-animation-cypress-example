@@ -22,7 +22,7 @@ path,
 polygon,
 circle,
 rect {
-  transition: fill 10s ease;
+  transition: fill 5s ease;
 }
 
 .window {
@@ -89,7 +89,7 @@ rect {
 .sun {
   top: 120px;
   margin-left: -20px;
-  transition: all 10s ease;
+  transition: all 5s ease;
   transform: scale(0.2);
 }
 
@@ -106,7 +106,7 @@ rect {
 .clouds {
   top: 50px;
   right: -500px;
-  transition: all 10s ease 0.1s;
+  transition: all 5s ease 0.1s;
 }
 
 .day .sun {
@@ -121,7 +121,7 @@ rect {
 .night .stars,
 .night .moon {
   opacity: 1;
-  transition: all 10s ease 0.5s;
+  transition: all 5s ease 0.5s;
 }
 .night #sky {
   fill: #17377f;
