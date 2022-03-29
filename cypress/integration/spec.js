@@ -12,7 +12,7 @@ it('goes through the day', () => {
   })
 })
 
-it.only('takes a screenshot', () => {
+it('takes a screenshot', () => {
   cy.visit('public/index.html')
 
   times.forEach((time) => {
