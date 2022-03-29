@@ -1,6 +1,6 @@
 body {
   background: radial-gradient(#870000, #53346d);
-  font-family: "Comfortaa", sans-serif;
+  font-family: 'Comfortaa', sans-serif;
 }
 
 .main-content {
@@ -18,8 +18,11 @@ svg {
   display: inline-block;
 }
 
-path, polygon, circle, rect {
-  transition: fill 1s ease;
+path,
+polygon,
+circle,
+rect {
+  transition: fill 10s ease;
 }
 
 .window {
@@ -30,7 +33,7 @@ path, polygon, circle, rect {
   padding: 10px;
 }
 .window:before {
-  content: "";
+  content: '';
   position: absolute;
   margin: auto;
   left: 0;
@@ -57,7 +60,14 @@ path, polygon, circle, rect {
   overflow: hidden;
 }
 
-.mountain, .hill, .land, .trees, .sun, .clouds, .moon, .stars {
+.mountain,
+.hill,
+.land,
+.trees,
+.sun,
+.clouds,
+.moon,
+.stars {
   position: absolute;
   left: 0;
   margin: auto;
@@ -79,11 +89,12 @@ path, polygon, circle, rect {
 .sun {
   top: 120px;
   margin-left: -20px;
-  transition: all 1s ease;
+  transition: all 10s ease;
   transform: scale(0.2);
 }
 
-.moon, .stars {
+.moon,
+.stars {
   top: 25px;
   opacity: 0;
 }
@@ -95,7 +106,7 @@ path, polygon, circle, rect {
 .clouds {
   top: 50px;
   right: -500px;
-  transition: all 1s ease 0.1s;
+  transition: all 10s ease 0.1s;
 }
 
 .day .sun {
@@ -107,9 +118,10 @@ path, polygon, circle, rect {
   right: 0;
 }
 
-.night .stars, .night .moon {
+.night .stars,
+.night .moon {
   opacity: 1;
-  transition: all 1s ease 0.5s;
+  transition: all 10s ease 0.5s;
 }
 .night #sky {
   fill: #17377f;
