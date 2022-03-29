@@ -2,28 +2,30 @@
 
 const times = ['Day', 'Sunset', 'Night', 'Dusk']
 
-it('changes time of day', () => {
+it('goes through the day', () => {
   cy.visit('public/index.html')
-  cy.contains('Dusk').should('have.class', 'active')
-  cy.contains('Day').click()
-  cy.get('.window').screenshot('Day', {
-    overwrite: true,
-  })
-  cy.contains('Sunset').click()
-  cy.get('.window').screenshot('Sunset', {
-    overwrite: true,
-  })
-  cy.contains('Night').click()
-  cy.get('.window').screenshot('Night', {
-    overwrite: true,
-  })
-  cy.contains('Dusk').click()
-  cy.get('.window').screenshot('Dusk', {
-    overwrite: true,
+  times.forEach((time) => {
+    cy.contains(time)
+      .click()
+      // add one second delay to show the animation in progress
+      .wait(1000, { log: false })
   })
 })
 
-it.only('disables animations', () => {
+it.only('takes a screenshot', () => {
+  cy.visit('public/index.html')
+
+  times.forEach((time) => {
+    cy.contains(time).click()
+    // notice we are taking a screenshot immediately
+    // without waiting for anything to finish updating
+    cy.get('.window').screenshot(time, {
+      overwrite: true,
+    })
+  })
+})
+
+it('disables animations', () => {
   cy.visit('public/index.html')
   cy.get('body').invoke(
     'append',
