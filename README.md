@@ -4,6 +4,6 @@
 
 ![CSS animation](./images/day-sunset.gif)
 
-Read the blog post [How Cypress Freezes CSS Animations And You Can Too](https://glebbahmutov.com/blog/css-animations/)
+Read the blog post [How Cypress Freezes CSS Animations And You Can Too](https://glebbahmutov.com/blog/css-animations/) and watch the video [Disable CSS Animations](https://youtu.be/h71mYvrsKWo).
 
 The CSS example comes from the Codepen [CSS Animation: Time of Day](https://codepen.io/oliviale/pen/ELPvLM) by Olivia Ng. To play it, just open the [public/index.html](./public/index.html) in your browser and click the time of the day buttons.
